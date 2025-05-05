@@ -1,6 +1,6 @@
 # Tech-Jam-BAMOE
 
-# Welcome to Tech Jam - IBM Business Automation Manager Open Editions
+## Welcome to Tech Jam - IBM Business Automation Manager Open Editions
 
 Here we will make all the assets for the event available, including useful links.
 The table below lists all the resources for which labs are currently offered.
