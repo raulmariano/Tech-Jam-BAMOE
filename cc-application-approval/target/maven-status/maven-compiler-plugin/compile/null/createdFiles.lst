@@ -1,0 +1,4 @@
+org\acme\cc_approval\model\CreditCard.class
+org\acme\cc_approval\service\CreditCardService.class
+META-INF\panache-archive.marker
+org\acme\cc_approval\model\Applicant.class

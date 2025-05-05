@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2019-09/schema","$defs":{"Applicant":{"type":"object","properties":{"age":{"type":"integer"},"annualIncome":{"type":"integer"},"creditScore":{"type":"integer"},"isStudent":{"type":"boolean"},"name":{"type":"string"}}}},"type":"object","properties":{"applicant":{"$ref":"#/$defs/Applicant"}}}

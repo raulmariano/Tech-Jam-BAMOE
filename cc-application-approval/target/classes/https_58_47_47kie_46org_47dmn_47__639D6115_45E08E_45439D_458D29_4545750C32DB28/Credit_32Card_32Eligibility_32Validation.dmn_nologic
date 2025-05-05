@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20230324/MODEL/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="https://kie.org/dmn/extensions/1.0" xmlns:dmndi="https://www.omg.org/spec/DMN/20230324/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_6A6CEBD4-0358-460E-998C-8512043ADEDE" name="Credit Card Eligibility Validation" expressionLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" namespace="https://kie.org/dmn/_639D6115-E08E-439D-8D29-45750C32DB28">
+  <description>This model evaluates an applicant's eligibility for a credit card based on age, credit score, annual income, and student status.</description>
+  <itemDefinition id="_E165F9C7-FC7C-49FC-9A6A-F747BCDD9736" name="EligibilityResult" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" isCollection="false">
+    <description>Decision result : approved, rejected or manual review </description>
+    <typeRef>string</typeRef>
+  </itemDefinition>
+  <itemDefinition id="_2C572DC3-F0C4-428F-9D28-69BDEEE5CF35" name="Applicant" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" isCollection="false">
+    <description>A complex type representing the credit card applicant's relevant information for eligibility assessmen</description>
+    <itemComponent id="_433A6674-91AA-4C98-9ABC-EA4DA4401C48" name="annualIncome" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" isCollection="false">
+      <typeRef>number</typeRef>
+    </itemComponent>
+    <itemComponent id="_F48287E3-D334-4F6D-B405-C089C19AB444" name="creditScore" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" isCollection="false">
+      <typeRef>number</typeRef>
+    </itemComponent>
+    <itemComponent id="_CB16EB00-D4DA-408E-816E-37EE02A34B8D" name="age" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" isCollection="false">
+      <typeRef>number</typeRef>
+    </itemComponent>
+  </itemDefinition>
+  <decision id="_45C1272A-23DD-4B0E-8784-71D71EA1FBDC" name="Eligibility Score Calculation">
+    <question></question>
+    <variable id="_CC01E112-5DB6-41DE-B1ED-171A1258F8F8" name="Eligibility Score Calculation" typeRef="number"></variable>
+    <informationRequirement id="_E6372EA2-A083-4253-89C5-6139400008AC">
+      <requiredInput href="#_9C70F987-F747-4651-A293-CCFF5B96DDC9"></requiredInput>
+    </informationRequirement>
+  </decision>
+  <decision id="_65DFDCC7-0B7E-4D5B-BA70-726BBEAB22F3" name="IsEligible">
+    <variable id="_B4256071-2CC6-4FBF-8B0D-5E7CC8E69CA3" name="IsEligible" typeRef="string"></variable>
+    <informationRequirement id="_45C0F101-4E19-41CB-95C3-78032E0F979E">
+      <requiredDecision href="#_45C1272A-23DD-4B0E-8784-71D71EA1FBDC"></requiredDecision>
+    </informationRequirement>
+  </decision>
+  <inputData id="_9C70F987-F747-4651-A293-CCFF5B96DDC9" name="Applicant">
+    <variable id="_EEBB8F8E-1549-4851-ADA3-9FBEED464DF5" name="Applicant" typeRef="Applicant"></variable>
+  </inputData>
+  <textAnnotation id="_2C9704EA-E2BC-4367-8E73-7AEDC78BA1AE" textFormat="text/plain">
+    <text>Evaluate Credit Score</text>
+  </textAnnotation>
+  <association id="_82959522-45D6-42A9-8F57-08D97A2C2E21" associationDirection="Both">
+    <sourceRef href="#_45C1272A-23DD-4B0E-8784-71D71EA1FBDC"></sourceRef>
+    <targetRef href="#_2C9704EA-E2BC-4367-8E73-7AEDC78BA1AE"></targetRef>
+  </association>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="_78F3D139-5CBC-4CCF-ACFB-1108B86B5D20" name="Default DRD" useAlternativeInputDataShape="false">
+      <di:extension></di:extension>
+      <dmndi:DMNShape id="_E4925964-4268-40EB-9865-668A3F7A27E5" dmnElementRef="_45C1272A-23DD-4B0E-8784-71D71EA1FBDC" isListedInputData="false" isCollapsed="false">
+        <dc:Bounds x="520" y="200" width="160" height="80"></dc:Bounds>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="_0AB60698-6E84-4281-AC28-66ACA5E06E76" dmnElementRef="_65DFDCC7-0B7E-4D5B-BA70-726BBEAB22F3" isListedInputData="false" isCollapsed="false">
+        <dc:Bounds x="520" y="60" width="160" height="80"></dc:Bounds>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="_07A6F82A-57FF-48EA-944D-624D4EB9F016" dmnElementRef="_9C70F987-F747-4651-A293-CCFF5B96DDC9" isListedInputData="false" isCollapsed="false">
+        <dc:Bounds x="520" y="340" width="160" height="80"></dc:Bounds>
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="_804D4404-D061-420A-A3D1-7AA92C71A3C6" dmnElementRef="_E6372EA2-A083-4253-89C5-6139400008AC" sourceElement="_07A6F82A-57FF-48EA-944D-624D4EB9F016" targetElement="_E4925964-4268-40EB-9865-668A3F7A27E5">
+        <di:waypoint x="600" y="380"></di:waypoint>
+        <di:waypoint x="600" y="240"></di:waypoint>
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="_361F74F4-D32D-45FA-AE12-462EFD3724DD" dmnElementRef="_2C9704EA-E2BC-4367-8E73-7AEDC78BA1AE" isListedInputData="false" isCollapsed="false">
+        <dc:Bounds x="240" y="220" width="200" height="60"></dc:Bounds>
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="_E1929612-3209-4368-8645-CF8E99CE2544-AUTO-TARGET" dmnElementRef="_82959522-45D6-42A9-8F57-08D97A2C2E21" sourceElement="_E4925964-4268-40EB-9865-668A3F7A27E5" targetElement="_361F74F4-D32D-45FA-AE12-462EFD3724DD">
+        <di:waypoint x="600" y="240"></di:waypoint>
+        <di:waypoint x="340" y="250"></di:waypoint>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="_9EDBBE08-CC95-4C4E-BBAE-A8D26D0E3C90" dmnElementRef="_45C0F101-4E19-41CB-95C3-78032E0F979E" sourceElement="_E4925964-4268-40EB-9865-668A3F7A27E5" targetElement="_0AB60698-6E84-4281-AC28-66ACA5E06E76">
+        <di:waypoint x="600" y="240"></di:waypoint>
+        <di:waypoint x="600" y="100"></di:waypoint>
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
