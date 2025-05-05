@@ -17,6 +17,6 @@ The table below lists all the resources for which labs are currently offered.
 
 | Link                                                         | Summary |
 | :----------------------------------------------------------- | :---------------------------------------------: |
-| [IMB BAMOE Documentation](https://www.ibm.com/docs/en/ibamoe/9.2.x) | Access official IBM documentation |
+| [IBM BAMOE Documentation](https://www.ibm.com/docs/en/ibamoe/9.2.x) | Access official IBM documentation |
 | [IBM Open Editions Community](https://community.ibm.com/community/user/automation/communities/community-home?CommunityKey=6c04b811-cff1-4f31-bb5c-0185982de671) | IBM's official community for Open Editions projects |
 | [BAMOE University](https://bamoe.university/) | Study page maintained by the IBM BAMOE product team |
