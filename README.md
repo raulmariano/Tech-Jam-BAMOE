@@ -9,7 +9,11 @@ IBM BAMOE is based on Open-Source Apache KIE technologies such as Drools, jBPM, 
 ## Labs
 
 - [**Explore the BAMOE Canvas with Kubernetes**](Lab%20Guide%2001%20-%20IBAMOE%20Canvas%20and%20Kubernetes%209.2_v1.0.0.pdf): In this lab, you will explore the BAMOE Canvas and Management Console to deepen your knowledge of workflow modeling and DMN (Decision Model and Notation). You will have the chance to test practical examples by deploying them to a local Minikube cluster.
+
+  ***Approximate Duration: 1 hour***
 - [**Exploring BAMOE Developer Tools for VS Code**](Lab%20Guide%2002%20-%20IBAMOE%20end-to-end%20use%20case%209.2_v1.0.0.pdf): In this hands-on lab, you will use VS Code and Quarkus Dev-UI to explore a credit card approval scenario. The goal is for you to implement new business rules directly into the application, gaining valuable experience developing with IBM BAMOE.
+
+  ***Approximate Duration: 3 hours***
 
 ## Environment (IBM TechZone - Business Partners and IBMers only)
 
