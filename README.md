@@ -17,8 +17,8 @@ IBM BAMOE is based on Open-Source Apache KIE technologies such as Drools, jBPM, 
 
 ## Environment (IBM TechZone - Business Partners and IBMers only)
 
-Labs require an IBM RPA environment, which can be reserved [here](https://techzone.ibm.com/collection/ibm-business-automation-manager-open-editions-environment/environments). After reserving an environment, you will receive an email link.
+Labs require an environment, which can be reserved [here](https://techzone.ibm.com/collection/ibm-business-automation-manager-open-editions-environment/environments). After reserving an environment, you will receive an email link.
 
 > [!NOTE]
 >
-> Please make sure to **reserve an environment with BAMOE v9.2 or higher**. Our labs have been developed and tested exclusively with the latest version of the product, ensuring full compatibility.
+> Please make sure to **reserve an environment with BAMOE v9.2 or higher**. Our labs have been developed and tested exclusively with the latest product version, ensuring full compatibility.
