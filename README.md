@@ -16,9 +16,13 @@ Labs require an environment, which can be reserved [here](https://techzone.ibm.c
 
 ## Labs
 
-- [**Explore the BAMOE Canvas with Kubernetes**](Lab%2001%20-%20Explore%20the%20BAMOE%20Canvas%20with%20Kubernetes%20v1.0.0.pdf): In this lab, you will explore the BAMOE Canvas and Management Console to deepen your knowledge of workflow modeling and DMN (Decision Model and Notation). You will have the chance to test practical examples by deploying them to a local Minikube cluster.
+- [**Explore the BAMOE Canvas with Kubernetes**](Lab%01%-%Explore%the%IBM%BAMOE%v9.X%Canvas%with%Kubernetes.pdf): In this lab, you will explore the BAMOE Canvas and Management Console to deepen your knowledge of workflow modeling and DMN (Decision Model and Notation). You will have the chance to test practical examples by deploying them to a local Minikube cluster.
 
   ***Approximate Duration: 1 hour***
-- [**Exploring BAMOE Developer Tools for VS Code**](Lab%2002%20-%20Exploring%20BAMOE%20Developer%20Tools%20for%20VS%20Code%20v1.0.0.pdf): In this hands-on lab, you will use VS Code and Quarkus Dev-UI to explore a credit card approval scenario. The goal is for you to implement new business rules directly into the application, gaining valuable experience developing with IBM BAMOE.
+- [**Exploring BAMOE Developer Tools for VS Code**](Lab%02%-%Exploring%IBM%BAMOE%v9.X%Developer%Tools%for%VS%Code.pdf): In this hands-on lab, you will use VS Code and Quarkus Dev-UI to explore a credit card approval scenario. The goal is for you to implement new business rules directly into the application, gaining valuable experience developing with IBM BAMOE.
 
   ***Approximate Duration: 3 hours***
+
+- [**Bring-up Lab - IBM BAMOE v9.X on Windows 11**](Bring-up%Lab%-%IBM%BAMOE%v9.X%on%Windows%11.pdf).
+
+  ***Approximate Duration: 2 hours***
